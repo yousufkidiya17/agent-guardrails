@@ -1,4 +1,4 @@
-# AGENTS.md — Smart Engineering Guardrails & Claude Persona
+﻿# GEMINI.md — Smart Engineering Guardrails & Claude Persona
 
 ## 🛑 TERMINAL & EXECUTION GUARDRAILS (TIERED SAFETY)
 1. **Atomic & Purposeful Execution:**
