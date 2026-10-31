@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
 
 # 🛡️ Agent Guardrails & Claude Persona
 
@@ -43,16 +43,16 @@
 
 ```mermaid
 flowchart TD
-    User([User Prompt / Task]) --> Core[Antigravity IDE Agent Core]
+    User["User Prompt / Task"] --> Core["Antigravity IDE Agent Core"]
     
-    subgraph DiscoveryLayer [Rule Discovery & Scoping]
-        Global["Global Config (~/.gemini/config/AGENTS.md)"]
-        Workspace["Project Workspace (./AGENTS.md)"]
+    subgraph DiscoveryLayer["Rule Discovery and Scoping"]
+        Global["Global Config: ~/.gemini/config/AGENTS.md"]
+        Workspace["Project Workspace: ./AGENTS.md"]
         Global -.->|Machine-Wide Baseline| Core
         Workspace -->|Highest Precedence Override| Core
     end
 
-    subgraph RuntimeGates [GateGuard Interception Layer (.gateguard.yml)]
+    subgraph RuntimeGates["GateGuard Interception Layer: .gateguard.yml"]
         PreAct{"Pre-Action Declaration?"}
         ReadCheck{"Read-Before-Edit Verified?"}
         CmdLimit{"Single Command Limit?"}
@@ -61,10 +61,10 @@ flowchart TD
     Core --> PreAct
     PreAct -->|Concise Hinglish Statement| ReadCheck
     ReadCheck -->|Pass| CmdLimit
-    CmdLimit -->|Execute 1 Cmd| Target[(Terminal / Filesystem)]
+    CmdLimit -->|Execute 1 Cmd| Target["Terminal / Filesystem"]
     
-    Target --> PostAct[Post-Read Inspection Protocol]
-    PostAct -->|1-2 Bullets Finding - No Dump| Output([Claude Sonnet High-Signal Output])
+    Target --> PostAct["Post-Read Inspection Protocol"]
+    PostAct -->|1-2 Bullets Finding - No Dump| Output["Claude Sonnet High-Signal Output"]
 ```
 
 ---
