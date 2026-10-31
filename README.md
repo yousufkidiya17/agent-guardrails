@@ -47,7 +47,7 @@ flowchart TD
     
     subgraph DiscoveryLayer [Rule Discovery & Scoping]
         Global["Global Config (~/.gemini/config/AGENTS.md)"]
-        Workspace["Project Workspace (<root>/AGENTS.md)"]
+        Workspace["Project Workspace (./AGENTS.md)"]
         Global -.->|Machine-Wide Baseline| Core
         Workspace -->|Highest Precedence Override| Core
     end
@@ -181,3 +181,4 @@ Contributions, feature requests, and rule improvements are welcome!
 Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more details.
 
 **Maintained by [Mohd Yousuf (@yousufkidiya17)](https://github.com/yousufkidiya17)**
+
