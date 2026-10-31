@@ -41,9 +41,36 @@
 
 ## 🏗️ System Architecture & Execution Flow
 
-<p align="center">
-  <img src="assets/architecture.svg" alt="System Architecture and Execution Flow" width="100%">
-</p>
+```mermaid
+flowchart TD
+    User["User Prompt / Task"] --> Agent["Antigravity Agent Core"]
+
+    subgraph Discovery["1. Rule Discovery Layer"]
+        Global["Global Config (~/.gemini/config/AGENTS.md)"]
+        Workspace["Project Workspace (./AGENTS.md)"]
+    end
+
+    Discovery --> Agent
+
+    subgraph Gates["2. Runtime GateGuard (.gateguard.yml)"]
+        PreAction["Pre-Action Declaration (Hinglish Intent)"]
+        ReadGate["Read-Before-Edit Safety Gate"]
+        TieredRec["Tiered Error Recovery (Smart Fix)"]
+    end
+
+    Agent --> PreAction
+    PreAction --> ReadGate
+    ReadGate --> TieredRec
+
+    subgraph Execution["3. Execution & Verification"]
+        Terminal["Terminal / Filesystem Action"]
+        PostRead["Mandatory Post-Read Findings"]
+    end
+
+    TieredRec --> Terminal
+    Terminal --> PostRead
+    PostRead --> Output["Claude Sonnet High-Signal Output"]
+```
 
 ---
 
