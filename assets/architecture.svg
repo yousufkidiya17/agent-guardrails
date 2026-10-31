@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Canvas Container -->
+  <rect x="2" y="2" width="896" height="376" rx="16" fill="url(#bgGrad)" stroke="#30363d" stroke-width="2"/>
+
+  <!-- Pipeline Step 1: User Input -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="145" width="140" height="90" rx="12" fill="#21262d" stroke="#38bdf8" stroke-width="2"/>
+    <circle cx="110" cy="175" r="16" fill="url(#blueGrad)"/>
+    <text x="110" y="180" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">👤</text>
+    <text x="110" y="208" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" fill="#f0f6fc" text-anchor="middle" font-weight="600">User Prompt</text>
+    <text x="110" y="224" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">Task Trigger</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M 180 190 L 220 190" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#arrow)" stroke-dasharray="4,4"/>
+  <polygon points="220,186 228,190 220,194" fill="#38bdf8"/>
+
+  <!-- Step 2: Discovery Layer -->
+  <g filter="url(#shadow)">
+    <rect x="230" y="110" width="180" height="160" rx="12" fill="#21262d" stroke="#a855f7" stroke-width="2"/>
+    <rect x="245" y="125" width="150" height="26" rx="6" fill="#7c3aed" fill-opacity="0.2"/>
+    <text x="320" y="142" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#d8b4fe" text-anchor="middle" font-weight="bold">🔍 Rule Discovery</text>
+    
+    <rect x="245" y="160" width="150" height="42" rx="6" fill="#161b22" stroke="#30363d"/>
+    <text x="320" y="177" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" fill="#f0f6fc" text-anchor="middle" font-weight="600">Global Config</text>
+    <text x="320" y="193" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">~/.gemini/config/AGENTS.md</text>
+
+    <rect x="245" y="210" width="150" height="45" rx="6" fill="#161b22" stroke="#30363d"/>
+    <text x="320" y="227" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" fill="#f0f6fc" text-anchor="middle" font-weight="600">Project Workspace</text>
+    <text x="320" y="243" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">&lt;workspace&gt;/AGENTS.md</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <path d="M 410 190 L 450 190" stroke="#a855f7" stroke-width="2.5"/>
+  <polygon points="450,186 458,190 450,194" fill="#a855f7"/>
+
+  <!-- Step 3: Runtime GateGuard -->
+  <g filter="url(#shadow)">
+    <rect x="460" y="90" width="200" height="200" rx="12" fill="#21262d" stroke="#10b981" stroke-width="2"/>
+    <rect x="475" y="105" width="170" height="26" rx="6" fill="#059669" fill-opacity="0.2"/>
+    <text x="560" y="122" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#6ee7b7" text-anchor="middle" font-weight="bold">🛡️ Runtime GateGuard</text>
+    
+    <rect x="475" y="140" width="170" height="38" rx="6" fill="#161b22" stroke="#30363d"/>
+    <text x="560" y="156" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" fill="#f0f6fc" text-anchor="middle" font-weight="600">Pre-Action Declaration</text>
+    <text x="560" y="170" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Concise Hinglish Intent</text>
+
+    <rect x="475" y="185" width="170" height="38" rx="6" fill="#161b22" stroke="#30363d"/>
+    <text x="560" y="201" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" fill="#f0f6fc" text-anchor="middle" font-weight="600">Read-Before-Edit Gate</text>
+    <text x="560" y="215" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Blocks Blind Hallucinations</text>
+
+    <rect x="475" y="230" width="170" height="45" rx="6" fill="#161b22" stroke="#30363d"/>
+    <text x="560" y="246" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" fill="#f0f6fc" text-anchor="middle" font-weight="600">Tiered Error Recovery</text>
+    <text x="560" y="260" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Smart Fix vs. Stop on Loss</text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <path d="M 660 190 L 700 190" stroke="#10b981" stroke-width="2.5"/>
+  <polygon points="700,186 708,190 700,194" fill="#10b981"/>
+
+  <!-- Step 4: Sonnet Rigor Output -->
+  <g filter="url(#shadow)">
+    <rect x="710" y="130" width="150" height="120" rx="12" fill="#21262d" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="785" cy="160" r="16" fill="url(#amberGrad)"/>
+    <text x="785" y="166" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">⚡</text>
+    <text x="785" y="194" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" fill="#f0f6fc" text-anchor="middle" font-weight="600">Claude Persona</text>
+    <text x="785" y="210" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10" fill="#fcd34d" text-anchor="middle">Anti-Slop Filter</text>
+    <text x="785" y="226" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Post-Read Findings</text>
+  </g>
+
+  <!-- Header Banner -->
+  <text x="450" y="45" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold" letter-spacing="1">SYSTEM ARCHITECTURE &amp; EXECUTION PIPELINE</text>
+  <line x1="250" y1="60" x2="650" y2="60" stroke="#30363d" stroke-width="1"/>
+</svg>

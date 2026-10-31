@@ -41,31 +41,9 @@
 
 ## 🏗️ System Architecture & Execution Flow
 
-```mermaid
-flowchart TD
-    User["User Prompt / Task"] --> Core["Antigravity IDE Agent Core"]
-    
-    subgraph DiscoveryLayer["Rule Discovery and Scoping"]
-        Global["Global Config: ~/.gemini/config/AGENTS.md"]
-        Workspace["Project Workspace: ./AGENTS.md"]
-        Global -.->|Machine-Wide Baseline| Core
-        Workspace -->|Highest Precedence Override| Core
-    end
-
-    subgraph RuntimeGates["GateGuard Interception Layer: .gateguard.yml"]
-        PreAct{"Pre-Action Declaration?"}
-        ReadCheck{"Read-Before-Edit Verified?"}
-        CmdLimit{"Single Command Limit?"}
-    end
-
-    Core --> PreAct
-    PreAct -->|Concise Hinglish Statement| ReadCheck
-    ReadCheck -->|Pass| CmdLimit
-    CmdLimit -->|Execute 1 Cmd| Target["Terminal / Filesystem"]
-    
-    Target --> PostAct["Post-Read Inspection Protocol"]
-    PostAct -->|1-2 Bullets Finding - No Dump| Output["Claude Sonnet High-Signal Output"]
-```
+<p align="center">
+  <img src="assets/architecture.svg" alt="System Architecture and Execution Flow" width="100%">
+</p>
 
 ---
 
