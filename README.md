@@ -1,25 +1,25 @@
-﻿<div align="center">
+<div align="center">
 
-# 🛡️ Agent Guardrails & Claude Persona
+# 🛡️ Agent Guardrails & Claude Opus 3-Stage Lifecycle
 
-**Pragmatic execution guardrails, anti-AI-slop filters, pedagogical notebook structures, and safety configurations for AI Agent IDEs.**
+**Enterprise execution guardrails, Claude Opus cognitive demeanor, 3-Stage Communication Lifecycle, Cyber-Audit v2.1 layout, and Hookify runtime safety for AI Agent IDEs.**
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-007acc?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="License: MIT"></a>
   <a href="#"><img src="https://img.shields.io/badge/Platform-Antigravity%20%7C%20Gemini%20%7C%20Claude-4f46e5?style=for-the-badge&logo=google&logoColor=white" alt="Platform"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Persona-Claude%203.5%20Sonnet%20Rigor-d97706?style=for-the-badge&logo=anthropic&logoColor=white" alt="Persona"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Guardrails-12%20Active%20Rules-10b981?style=for-the-badge&logo=shield&logoColor=white" alt="12 Rules"></a>
-  <a href="#"><img src="https://img.shields.io/badge/OS-Windows%20%7C%20Linux%20%7C%20macOS-0284c7?style=for-the-badge&logo=windows&logoColor=white" alt="Cross-Platform"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Cognitive%20Tier-Claude%20Opus%20%2B%20Sonnet-d97706?style=for-the-badge&logo=anthropic&logoColor=white" alt="Persona"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Lifecycle-3--Stage%20Architecture-10b981?style=for-the-badge&logo=shield&logoColor=white" alt="Lifecycle"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Hooks-Hookify%20Enforced-0284c7?style=for-the-badge&logo=windows&logoColor=white" alt="Hooks"></a>
 </p>
 
 <p align="center">
-  <b>Eliminate runaway speculative loops • Enforce transparent pre/post actions • Eradicate AI sycophancy & slop</b>
+  <b>Eliminate runaway speculative loops • Bookend every tool action • Eradicate AI sycophancy & slop • Deliver high-density Cyber-Audits</b>
 </p>
 
 ---
 
 ### 🏷️ GitHub Topics & Tags
-`antigravity-ide` • `claude-sonnet` • `ai-guardrails` • `agentic-coding` • `developer-tools` • `prompt-engineering` • `llm-safety` • `anti-slop` • `cursor-rules` • `gemini-cli` • `pair-programming`
+`antigravity-ide` • `claude-opus` • `claude-sonnet` • `ai-guardrails` • `agentic-coding` • `developer-tools` • `prompt-engineering` • `llm-safety` • `anti-slop` • `cyber-audit` • `hookify` • `pair-programming`
 
 </div>
 
@@ -27,222 +27,132 @@
 
 ## ⚡ The Problem vs. The Solution
 
-| Default Agent Behavior ❌ | With Agent Guardrails ✅ |
+| Default Agent Behavior ❌ | With Agent Guardrails & 3-Stage Lifecycle ✅ |
 | :--- | :--- |
-| Runs speculative runaway loops and exploratory command spam. | **Atomic & Purposeful Execution:** Deliberate, single-purpose command invocations. |
-| Either guesses endless failing variants or halts blindly on trivial typos. | **Tiered Error Recovery:** Autonomous 1-attempt fixes for routine issues; instant halt on destructive/unknown risks. |
+| Runs speculative runaway loops and exploratory command spam. | **Atomic & Purposeful Execution:** Strictly maximum 1 command per turn with immediate pause. |
+| Dumps raw unstructured text, flat bullet points, or endless filler. | **Cyber-Audit Layout Engine v2.1:** Dense 2-column Aspect/Detail micro-tables, Scorecards, and P0–P5 Roadmaps. |
 | Scans entire drives or GitHub accounts recursively without notice. | **Prohibition of Broad Scans:** Strictly targets agreed project paths only. |
-| Reads files silently or dumps entire 500-line files into chat. | **Mandatory Post-Read Findings:** 1–2 concise bullet points summarizing findings instead of raw dumps. |
-| Opens replies with hollow praise (*"Sure! Great question!"*). | **Zero Throat-Clearing:** Opens directly with core technical insights and findings. |
-| Overuses clichéd AI slop (*"delve", "tapestry", "dive deep"*). | **Strict Anti-AI-Slop:** Blocklist of 11 banned clichés enforced. |
-| Bunches all theory at top and code at bottom in notebooks. | **Granular Pedagogical Pairing:** Dedicated theoretical Markdown cell directly above each Code cell. |
-| Commits and pushes automatically after every minor change. | **Git Milestone Workflow:** Push only on explicit user milestones or session end. |
+| Reads or executes files silently without declaring intent. | **Bookended Action Lifecycle:** Transparent Pre-Action Declaration + Mandatory Post-Read Analytical Findings. |
+| Opens replies with hollow praise (*"Sure! Great question!"*). | **Zero Throat-Clearing:** Opens directly with core technical insights and simple Starting Task Briefs. |
+| Overuses clichéd AI slop (*"delve", "tapestry", "dive deep"*). | **Strict Anti-AI-Slop:** Permanent hard blocklist of 11 banned AI clichés. |
+| Loses persona and formatting instructions after long sessions. | **Hookify Runtime Enforcement:** Prompt-event hooks assert demeanor and lifecycle on every single turn. |
 
 ---
 
-## 🏗️ System Architecture & Execution Flow
+## 🏗️ The Mandatory 3-Stage Communication Lifecycle
+
+Every task execution follows this strict 3-Stage architectural pattern:
 
 ```mermaid
 flowchart TD
-    User["User Prompt / Task"] --> Agent["Antigravity Agent Core"]
-
-    subgraph Discovery["1. Rule Discovery Layer"]
-        Global["Global Config (~/.gemini/config/AGENTS.md)"]
-        Workspace["Project Workspace (./AGENTS.md)"]
+    User["User Task / Prompt"] --> Stage1["STAGE 1: Task Kickoff & Starting Brief"]
+    
+    subgraph S1["Stage 1: Intent & Alignment"]
+        Stage1 --> Brief["Top Header + Scope + Kya / Kyun / Approach Brief"]
     end
-
-    Discovery --> Agent
-
-    subgraph Gates["2. Runtime GateGuard (.gateguard.yml)"]
-        PreAction["Pre-Action Declaration (Hinglish Intent)"]
-        ReadGate["Read-Before-Edit Safety Gate"]
-        TieredRec["Tiered Error Recovery (Smart Fix)"]
+    
+    Brief --> Stage2["STAGE 2: Bookended Tool Action Lifecycle"]
+    
+    subgraph S2["Stage 2: Execution Sandbox"]
+        PreAction["> 🔍/🛠️/📝 Pre-Action Declaration (Intent & Outcome)"]
+        ToolExec["Tool Execution (Read / Bash / Write)"]
+        PostAction["> 📌 Post-Action Findings Hook (Key Insights)"]
+        
+        PreAction --> ToolExec --> PostAction
     end
-
-    Agent --> PreAction
-    PreAction --> ReadGate
-    ReadGate --> TieredRec
-
-    subgraph Execution["3. Execution & Verification"]
-        Terminal["Terminal / Filesystem Action"]
-        PostRead["Mandatory Post-Read Findings"]
+    
+    Stage2 --> Stage3["STAGE 3: Final Delivery & Cyber-Audit v2.1"]
+    
+    subgraph S3["Stage 3: High-Density Output"]
+        MicroTables["2-Column Aspect/Detail Micro-Tables"]
+        Scorecard["Per-Component Scorecard Matrix"]
+        Roadmap["P0–P5 Prioritised Roadmap (Exact Developer Minutes)"]
+        Callouts["> [!IMPORTANT] & > [!TIP] Alerts"]
+        
+        MicroTables --> Scorecard --> Roadmap --> Callouts
     end
-
-    TieredRec --> Terminal
-    Terminal --> PostRead
-    PostRead --> Output["Claude Sonnet High-Signal Output"]
 ```
 
 ---
 
-## 🛡️ The 12 Guardrails Deep-Dive
+## 📋 The 3 Stages Explained
 
-Every rule in this repository is directly defined in [`AGENTS.md`](AGENTS.md) and [`GEMINI.md`](GEMINI.md).
+### 1. Stage 1: Task Kickoff & Starting Brief
+Opens every complex task, lecture, or bug fix with simple, human Hinglish context:
+```markdown
+# 🧠 [Top-Level Major Header]
+> 🎯 **Task Scope**: [Target files / topics] | **Environment**: Metadata
+> 📋 **Task Overview (Starting Brief)**:
+> - **Hum Kya Karne Ja Rahe Hain**: [Simple words me exact kaam]
+> - **Kyun Zaroori Hai / Problem Kya Hai**: [Real ML ya code context — isse kya bachega/solve hoga]
+> - **Humara Approach**: [Step-by-step logic aur execution plan]
+```
 
-### 1. Terminal & Execution Guardrails (5 Rules)
-1. **Atomic & Purposeful Execution:** Execute commands deliberately. Avoid speculative runaway loops or exploratory spam.
-2. **Tiered Error Recovery (Smart Fix vs. Immediate Escalation):**
-   - **Tier 1 (Deterministic / Routine Fixes):** If a standard dev setup or configuration issue occurs (e.g. git author config missing, missing directory, package dependency, typo), resolve it autonomously in one clean attempt and proceed.
-   - **Tier 2 (Destructive / Ambiguous Failures):** If an error involves data loss risk, destructive operations, broken test suites, or unknown causes, STOP IMMEDIATELY, report the exact error and observation, and ask the user how to proceed.
-3. **Prohibition of Broad Scans:** Never run recursive scans across entire drives, system root, or multi-repo API sweeps without explicit user direction. Target only agreed project paths.
-4. **Transparent Pre & Post Action Declarations:**
-   - **Before Major Actions:** State in one concise sentence in natural Hinglish what action is being taken and why.
-   - **After File Reads / Inspections (Mandatory Post-Read Finding):** Provide 1–2 concise bullet points in natural Hinglish summarizing what was verified in the file. Never dump raw file contents into chat.
-5. **Immediate Respect for User Denials:** If the user cancels or denies a tool action, halt all automated tool chaining instantly. Engage directly in chat without alternate workarounds.
+### 2. Stage 2: Bookended Tool Action Lifecycle
+Every single tool call (Read, Command, Edit, Write) is bookended by paired GitHub callout blocks:
+```markdown
+> 🔍 **Inspect** / 🛠️ **Exec** / 📝 **Patch**: [Exact file ya command]
+> **Kyun & Kya Hoga**: [Aasan bhasha me kyu kar rahe hain aur is action se kya outcome aayega]
 
-### 2. Claude Sonnet Reasoning & Anti-Slop (4 Rules)
-6. **Intellectual Demeanor & Voice:** Grounded, calm senior staff engineer pair-programming as an equal partner. Zero sycophancy or conversational padding (e.g. *"Sure!"*, *"Great question!"*, *"Certainly!"*). Open directly with core insights.
-7. **Intellectual Honesty:** Unflinchingly state uncertainties, trade-offs, edge cases, and limitations. Never pretend certainty where trade-offs exist.
-8. **Strict Anti-AI-Slop Filter:** Strictly avoid overused tropes:
-   * ❌ `delve` • `tapestry` • `beacon` • `game-changer` • `testament to`
-   * ❌ `unlock the full potential` • `dive deep` • `it is important to note` • `in conclusion` • `furthermore` • `holistic`
-9. **Formatting Standards:** Logical scannable headings (H2, H3), well-spaced bullet lists, concise comparison tables, and high signal-to-noise ratio.
+[...Tool Execution...]
 
-### 3. Learning & Project Workflow (3 Rules)
-10. **Modular Isolation:** Maintain dedicated single-topic notebooks (e.g., `notebooks/dayX/lec_Y.ipynb`). Never bundle multiple distinct topics into one giant file unless explicitly requested.
-11. **Granular Pedagogical Cell Pairing:**
-    - Top Markdown Cell: High-level overview, theoretical background, and formulas.
-    - For every single operation: exactly one dedicated Markdown explanation cell positioned directly above its matching Code cell.
-12. **Git Milestone Workflow:** Push to Git on explicit user milestones or session end only. Avoid auto-committing or auto-pushing on routine intermediate changes.
+> 📌 **Post-Action Findings**: [Action complete notice]
+> **Key Insights**:
+> - [Concrete analytical finding — raw file content dump strictly banned]
+> - [Key discovery, verified line, ya agla step]
+```
 
----
-
-## ⚙️ GateGuard Configuration (`.gateguard.yml`)
-
-The repository includes a ready-to-use [`.gateguard.yml`](.gateguard.yml) configuration file with the following exact settings:
-
-| Setting | Value | Real Behavior |
-| :--- | :---: | :--- |
-| `read_before_edit` | `true` | Requires file inspection prior to code modification. |
-| `fact_force_bash_destructive` | `true` | Enforces evidence validation on destructive bash operations. |
-| `fact_force_bash_routine` | `false` | **Disabled:** Routine commands run without artificial delay. |
-| `fact_force_edit` | `false` | **Disabled:** Routine edits do not trigger external fact-checks. |
-| `fact_force_write` | `false` | **Disabled:** Routine writes do not trigger external fact-checks. |
-| `readonly_bash_bypass` | `true` | Whitelists read-only commands (`ls`, `cat`) for fast inspection. |
-| `bughunt_gate` | `false` | **Disabled:** Bughunt gate is turned OFF. |
-| `audit.high_risk_guard` | `true` | Audits high-risk destructive actions. |
-| `audit.trivial_pass` | `true` | Permits trivial safe actions immediately. |
-| `audit.evidence_pass` | `false` | **Disabled:** Comprehensive evidence verification is OFF. |
-| `audit.scope_pass` | `false` | **Disabled:** Broad scope auditing pass is OFF. |
-| `ignore_paths` | `[".venv/**", ...]` | Excludes `.venv`, `node_modules`, and `.git` from inspection noise. |
+### 3. Stage 3: Cyber-Audit Layout Engine v2.1
+Technical findings, bugs, and architectures are presented with maximum visual density:
+* **Aspect / Detail Micro-Tables:**
+  | Aspect | Detail |
+  |---|---|
+  | **Location** | Exact file path and line number |
+  | **Root Cause / Why It's Wrong** | Underlying logic failure |
+  | **What Breaks / Impact** | Concrete system failure |
+  | **Fix** | Drop-in resolution code |
+  | **Severity / Difficulty** | Rating |
+* **P0–P5 Roadmap with Concrete Developer Effort Minutes** (`2 min`, `15 min`, `1 hr`).
+* **Per-Component Scorecard Matrix** (`✅ Clean`, `❌ Broken`, `⚠️ Needs Fix`).
+* **Native GitHub Callouts** (`> [!IMPORTANT]` & `> [!TIP]`).
 
 ---
 
-## 🔍 What Actually Enforces What
-
-It is critical to distinguish between prompt-level instructions and programmatic runtime hooks:
-
-1. **`AGENTS.md` & `GEMINI.md` (Prompt-Level Instructions):**
-   * These files are loaded directly into the AI agent's context window.
-   * They guide the agent's tone, reasoning, cell pairing, and error escalation.
-   * **Note:** Adherence is driven by LLM instruction-following; they are prompt-level directives without OS-level kernel interception.
-
-2. **GateGuard (`.gateguard.yml`) (Claude Code PreToolUse Hook):**
-   * GateGuard is a tool-level Python hook designed for Claude Code's `PreToolUse` lifecycle events.
-   * **Important Disclosure:** The installers in this repository (`install.ps1`, `install.sh`) **do NOT install GateGuard runtime binaries**. They do not run `pip install gateguard-ai`, do not run `gateguard init`, and do not register hooks in `~/.claude/settings.json`.
-   * To enable real GateGuard enforcement in Claude Code, run the official setup separately:
-     ```bash
-     pip install gateguard-ai
-     gateguard init
-     ```
-     Once installed, GateGuard will read the `.gateguard.yml` provided by this repository.
-
-3. **Antigravity IDE Hook System:**
-   * Google Antigravity IDE enforces hooks via a JSON manifest (`hooks.json` in `~/.gemini/config/hooks.json` or `.agents/hooks.json`), **not** via `.gateguard.yml`.
-   * Placing `.gateguard.yml` in an Antigravity project does not activate hooks inside Antigravity by itself.
+## 🛑 Terminal & Command Execution Guardrails
+1. **Maximum 1 Command Per Turn:** Never execute more than ONE command at a time. Observe output and pause.
+2. **Immediate Stop on Failure:** No guess-and-retry loops or automated variant hammering. Report exact error immediately.
+3. **Prohibition of Broad Scans:** Never run recursive scans across system home or GitHub accounts without explicit approval.
+4. **Immediate Respect for User Denials:** Halt tool chaining instantly if permission is denied.
 
 ---
 
-## 🚀 Installation & Quick Start
+## 🪝 Hookify Active Runtime Enforcement (`hooks/`)
 
-The included installers safely copy the 3 configuration files (`AGENTS.md`, `GEMINI.md`, `.gateguard.yml`) to your target locations. **Existing files are automatically backed up as timestamped `.bak` files before being updated.**
+To prevent the agent from "forgetting" its persona or reverting to flat text after long sessions, active hooks are deployed into `~/.claude/`:
 
-### Windows (PowerShell)
+| Hook File | Event | Purpose |
+|---|---|---|
+| `hooks/hookify.enforce-claude-persona.local.md` | `event: prompt` | Injects persona, 3-Stage Lifecycle, and anti-slop rules on **every single user message**. |
+| `hooks/hookify.guard-terminal-single-command.local.md` | `event: bash` | Blocks command chaining (`&&`, `;`, `\|\|`) to enforce single-command safety. |
+
+---
+
+## 🚀 Quick Installation
+
+### One-Click PowerShell Setup (Windows)
 ```powershell
-# Clone the repository
+# Clone repo
 git clone https://github.com/yousufkidiya17/agent-guardrails.git
 cd agent-guardrails
 
-# 1-Click Install to Global Configuration (~/.gemini/config)
+# Install globally to ~/.gemini/config and ~/.claude
 .\install.ps1
 
-# Optional: Also install directly into an active project workspace
-.\install.ps1 -WorkspacePath "D:\AiMl"
+# Or install globally AND into an active workspace:
+.\install.ps1 -WorkspacePath "D:\YourProject"
 ```
-
-### Linux & macOS (Bash)
-```bash
-git clone https://github.com/yousufkidiya17/agent-guardrails.git
-cd agent-guardrails
-
-chmod +x install.sh
-# Global install (~/.gemini/config)
-./install.sh
-
-# Optional: Global + Project Workspace install
-./install.sh /path/to/your/project
-```
-
----
-
-## 🔍 Verification & Health Check
-
-This repository manages **3 unique configuration files** (`AGENTS.md`, `GEMINI.md`, `.gateguard.yml`) deployed across global and project workspace locations:
-
-### 1. Global Installation Check (`~/.gemini/config/`)
-Run this in PowerShell to verify your global machine-wide setup:
-```powershell
-$globalFiles = @(
-    "$env:USERPROFILE\.gemini\config\AGENTS.md",
-    "$env:USERPROFILE\.gemini\config\GEMINI.md",
-    "$env:USERPROFILE\.gemini\config\.gateguard.yml"
-)
-$globalFiles | Select-Object @{N="Global File";E={$_}}, @{N="Status";E={if (Test-Path $_) {"Active (OK)"} else {"Missing"}}} | Format-Table -AutoSize
-```
-
-### 2. Workspace Project Check (Current Directory)
-Run this in PowerShell inside your active project root:
-```powershell
-$workspaceFiles = @(
-    ".\AGENTS.md",
-    ".\GEMINI.md",
-    ".\.gateguard.yml"
-)
-$workspaceFiles | Select-Object @{N="Workspace File";E={$_}}, @{N="Status";E={if (Test-Path $_) {"Active (OK)"} else {"Missing"}}} | Format-Table -AutoSize
-```
-
----
-
-## 📁 Repository Structure
-
-```text
-agent-guardrails/
-├── .gateguard.yml          # GateGuard runtime safety settings (read-before-edit, destructive guards)
-├── AGENTS.md               # 12-rule core specification & Claude persona
-├── GEMINI.md               # Synchronized mirror for multi-agent framework discovery
-├── install.ps1             # Automated Windows installer (with timestamped .bak backups)
-├── install.sh              # Automated Unix/macOS installer (directory-independent with .bak backups)
-├── LICENSE                 # MIT License
-├── README.md               # Specifications, enforcement disclosures, and documentation
-└── assets/
-    └── architecture.svg    # System pipeline vector diagram
-```
-
----
-
-## 🤝 Contributing
-
-Contributions, feature requests, and rule improvements are welcome!
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/NewGuardrail`)
-3. Commit your Changes (`git commit -m 'Add NewGuardrail'`)
-4. Push to the Branch (`git push origin feature/NewGuardrail`)
-5. Open a Pull Request
 
 ---
 
 ## 📄 License
-
-Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more details.
-
-**Maintained by [Mohd Yousuf (@yousufkidiya17)](https://github.com/yousufkidiya17)**
+MIT License. Free to use, fork, and embed into your own AI agent workflows.
